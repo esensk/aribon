@@ -59,8 +59,7 @@ int main() {
 		if (j == m - 1) {
 			j = 0;
 			++i;
-		}
-		else {
+		} else {
 			++j;
 		}
 	}
@@ -72,8 +71,7 @@ int main() {
 		if (j == m - 1) {
 			j = 0;
 			++i;
-		}
-		else {
+		} else {
 			++j;
 		}
 	}

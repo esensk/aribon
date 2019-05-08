@@ -14,8 +14,7 @@ int rec(
 	}
 	if (j < w[i]) {
 		return dp[i][j] = rec(i + 1, j, v, w, n, dp);
-	}
-	else {
+	} else {
 		return dp[i][j] =
 				   max(rec(i + 1, j - w[i], v, w, n, dp) + v[i], rec(i + 1, j, v, w, n, dp));
 	}

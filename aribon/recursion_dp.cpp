@@ -9,13 +9,13 @@ void solve(int W, const vector<int>& v, const vector<int>& w, int n, vector<vect
 		for (int j = 0; j <= W; ++j) {
 			if (j < w[j]) {
 				dp[i][j] = dp[i + 1][j];
-			}
-			else {
+			} else {
 				dp[i][j] = max(dp[i + 1][j], dp[i + 1][j - w[i]] + v[i]);
 			}
 		}
 	}
 }
+
 
 int main() {
 	int n, W;

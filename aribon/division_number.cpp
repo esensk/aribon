@@ -14,8 +14,7 @@ int main() {
 			if (j - i >= 0) {
 				dp[i][j] = (dp[i - 1][j] + dp[i][j - i]) % M;
 				cout << j << "‚Ì" << i << "•ªŠ„‚Ì”: " << dp[i][j] << endl;
-			}
-			else {
+			} else {
 				dp[i][j] = dp[i - 1][j];
 				cout << j << "‚Ì" << i << "•ªŠ„‚Ì”: " << dp[i][j] << endl;
 			}

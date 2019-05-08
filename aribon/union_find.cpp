@@ -14,8 +14,7 @@ void init(int n) {
 int find(int x) {
 	if (par[x] == x) {
 		return x;
-	}
-	else {
+	} else {
 		return par[x] = find(par[x]);
 	}
 }
@@ -29,8 +28,7 @@ void unite(int x, int y) {
 
 	if (rank[x] < rank[y]) {
 		par[x] = y;
-	}
-	else {
+	} else {
 		par[y] = x;
 		if (rank[x] == rank[y]) {
 			rank[x]++;
